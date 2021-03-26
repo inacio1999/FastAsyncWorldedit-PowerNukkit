@@ -26,7 +26,6 @@ import cn.nukkit.command.CommandSender;
 import cn.nukkit.plugin.PluginBase;
 import com.boydti.fawe.Fawe;
 import com.boydti.fawe.config.Settings;
-import com.boydti.fawe.nukkit.core.converter.ConvertCommands;
 import com.boydti.fawe.nukkit.optimization.FaweNukkit;
 import com.google.common.base.Joiner;
 import com.sk89q.util.yaml.YAMLProcessor;
@@ -93,7 +92,6 @@ public class NukkitWorldEdit extends PluginBase {
             WorldEdit.getInstance().getPlatformManager().register(platform);
             {
                 CommandManager cmdMan = CommandManager.getInstance();
-                cmdMan.registerCommands(new ConvertCommands(WorldEdit.getInstance()));
             }
             logger.info("WorldEdit for Nukkit (version " + getInternalVersion() + ") is loaded");
             WorldEdit.getInstance().getEventBus().post(new PlatformReadyEvent());
