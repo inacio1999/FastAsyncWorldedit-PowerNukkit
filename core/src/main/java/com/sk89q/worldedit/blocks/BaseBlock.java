@@ -164,12 +164,12 @@ public class BaseBlock implements TileEntityBlock, Pattern, Serializable {
      * @param id block id (between 0 and {@link #MAX_ID}).
      */
     protected final void internalSetId(int id) {
-        if (id > MAX_ID) {
-            throw new IllegalArgumentException("Can't have a block ID above " + MAX_ID + " (" + id + " given)");
-        }
-        if (id < 0) {
-            throw new IllegalArgumentException("Can't have a block ID below 0");
-        }
+        //if (id > MAX_ID) {
+            //throw new IllegalArgumentException("Can't have a block ID above " + MAX_ID + " (" + id + " given)");
+        //}
+        //if (id < 0) {
+            //throw new IllegalArgumentException("Can't have a block ID below 0");
+        //}
 
         this.id = (short) id;
     }
