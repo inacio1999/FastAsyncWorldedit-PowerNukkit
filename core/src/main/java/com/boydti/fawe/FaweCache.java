@@ -576,6 +576,7 @@ public class FaweCache {
      */
     public static boolean hasData(int id) {
         switch (id) {
+            case -220:
             case 0:
             case 2:
             case 4:
@@ -710,6 +711,7 @@ public class FaweCache {
             case 233:
             case 234:
                 return true;
+            case -220:
             case 0:
             case 1:
             case 2:

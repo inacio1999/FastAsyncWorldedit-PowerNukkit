@@ -260,6 +260,7 @@ public abstract class CharFaweChunk<T, V extends FaweQueue> extends FaweChunk<T>
                 this.air[i]++;
                 vs[j] = (char) 1;
                 return;
+            case -220:
             case 39:
             case 40:
             case 51:

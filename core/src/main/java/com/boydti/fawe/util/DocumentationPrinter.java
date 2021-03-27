@@ -106,7 +106,6 @@ public final class DocumentationPrinter {
             writePermissionsWikiTable(stream, builder, "/", ClipboardCommands.class);
             writePermissionsWikiTable(stream, builder, "/", GenerationCommands.class);
             writePermissionsWikiTable(stream, builder, "/", BiomeCommands.class);
-            writePermissionsWikiTable(stream, builder, "/anvil ", AnvilCommands.class);
             writePermissionsWikiTable(stream, builder, "/sp ", SuperPickaxeCommands.class);
             writePermissionsWikiTable(stream, builder, "/", NavigationCommands.class);
             writePermissionsWikiTable(stream, builder, "/snapshot", SnapshotCommands.class);

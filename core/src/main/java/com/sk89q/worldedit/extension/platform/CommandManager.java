@@ -259,7 +259,7 @@ public final class CommandManager {
         dispatcher = graph
                 .group("/anvil")
                 .describeAs("Anvil command")
-                .registerMethods(new AnvilCommands(worldEdit)).parent()
+                .parent()
                 .registerMethods(new BiomeCommands(worldEdit))
                 .registerMethods(new ChunkCommands(worldEdit))
                 .registerMethods(new ClipboardCommands(worldEdit))

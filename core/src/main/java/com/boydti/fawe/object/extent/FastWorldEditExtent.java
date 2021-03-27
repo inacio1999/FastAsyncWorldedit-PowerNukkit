@@ -228,7 +228,8 @@ public class FastWorldEditExtent extends AbstractDelegateExtent implements HasFa
             case 192:
                 // No data
                 return queue.setBlock(x, y, z, id);
-            case 1: // No tiles
+            case -220:
+            case 1:// No tiles
             case 3:
             case 5:
             case 6:

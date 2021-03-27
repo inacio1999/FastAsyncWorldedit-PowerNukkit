@@ -209,6 +209,7 @@ public class CuboidClipboard {
         switch (id) {
             case 0:
                 return true;
+            case -220:
             case 54:
             case 130:
             case 142:
