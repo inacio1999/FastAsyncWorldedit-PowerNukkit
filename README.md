@@ -8,6 +8,9 @@
 FAWE is a fork of WorldEdit that has huge speed and memory improvements and considerably more features
 
 This version aims to add support for PowerNukkit
+
+WorldEdit for PowerNukkit
+
 # You can find the normal or "new" version of FAWE [here](https://github.com/IntellectualSites/FastAsyncWorldEdit).
 
 ## Downloads
