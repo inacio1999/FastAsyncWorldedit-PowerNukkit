@@ -171,7 +171,9 @@ public class BaseBlock implements TileEntityBlock, Pattern, Serializable {
             //throw new IllegalArgumentException("Can't have a block ID below 0");
         //}
 
-        this.id = (short) id;
+        //convert negative Ids to positive PowerNukkit Id
+        int blockId = id < 0? 255 - id : id;
+        this.id = (short) blockId;
     }
 
     /**

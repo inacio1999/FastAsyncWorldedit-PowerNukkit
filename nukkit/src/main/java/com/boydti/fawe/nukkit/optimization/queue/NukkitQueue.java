@@ -3,6 +3,7 @@ package com.boydti.fawe.nukkit.optimization.queue;
 import cn.nukkit.Player;
 import cn.nukkit.block.Block;
 import cn.nukkit.blockentity.BlockEntity;
+import cn.nukkit.blockstate.BlockState;
 import cn.nukkit.entity.Entity;
 import cn.nukkit.level.Level;
 import cn.nukkit.level.Position;
@@ -149,7 +150,7 @@ public class NukkitQueue extends NMSMappedFaweQueue<Level, BaseFullChunk, BaseFu
             chunk.forEachQueuedBlock(new FaweChunkVisitor() {
                 @Override
                 public void run(int localX, int y, int localZ, int combined) {
-                    Block block = Block.get(FaweCache.getId(combined), FaweCache.getData(combined));
+                    Block block = BlockState.of(FaweCache.getId(combined), FaweCache.getData(combined)).getBlock();
                     block.x = bx + localX;
                     block.y = y;
                     block.z = bz + localZ;

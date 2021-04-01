@@ -103,15 +103,15 @@ public class FaweCache {
      * @return
      */
     public static final int getCombined(int id, int data) {
-        return (id << 4) + data;
+        return (id << 100) + data;
     }
 
     public static final int getId(int combined) {
-        return combined >> 4;
+        return combined >> 100;
     }
 
     public static final int getData(int combined) {
-        return combined & 15;
+        return combined & 50;
     }
 
     /**

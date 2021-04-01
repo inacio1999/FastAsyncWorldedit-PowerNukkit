@@ -239,6 +239,7 @@ public abstract class CharFaweChunk<T, V extends FaweQueue> extends FaweChunk<T>
 
     @Override
     public void setBlock(final int x, final int y, final int z, final int id, int data) {
+        System.out.println("x: " + id);
         final int i = FaweCache.CACHE_I[y][z][x];
         final int j = FaweCache.CACHE_J[y][z][x];
         char[] vs = this.ids[i];
@@ -260,7 +261,6 @@ public abstract class CharFaweChunk<T, V extends FaweQueue> extends FaweChunk<T>
                 this.air[i]++;
                 vs[j] = (char) 1;
                 return;
-            case -220:
             case 39:
             case 40:
             case 51:
