@@ -27,7 +27,7 @@ public class NukkitChunk extends CharFaweChunk<BaseFullChunk, NukkitQueue> {
      *
      * @param parent
      * @param x
-     * @param z\}
+     * @param z}
      */
     public NukkitChunk(FaweQueue parent, int x, int z) {
         super(parent, x, z);
