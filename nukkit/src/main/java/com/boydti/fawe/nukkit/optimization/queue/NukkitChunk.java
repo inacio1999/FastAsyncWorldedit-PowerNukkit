@@ -135,12 +135,12 @@ public class NukkitChunk extends CharFaweChunk<BaseFullChunk, NukkitQueue> {
                             case 0:
                                 continue;
                             case 1:
-                                chunk.setBlockAt(x, y, z, 0);
+                                chunk.setBlockId(x, y, z, 0);
                                 continue;
                             default:
                                 int id = FaweCache.getId(combined);
                                 int data = FaweCache.getData(combined);
-                                chunk.setBlockAt(x, y, z, id);
+                                chunk.setBlockId(x, y, z, id);
                                 chunk.setBlockData(x, y, z, data);
                                 if (FaweCache.hasNBT(id)) {
                                     CompoundTag tile = getTile(x, y, z);
